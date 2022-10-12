@@ -2,6 +2,7 @@ h1 {
   color: pink;
   font-family: verdana;
   font-size: 300%;
+  margin-top: 30;
 }
 ul {
   list-style-type: none;
@@ -38,8 +39,10 @@ li a:hover {
   float: left;
   width: 20%;
   margin-left:150px;
-  margin-bottom: 20px;
+  margin-bottom:10px;
   padding: 10px;
+  background-color: #FFFFFF;
+
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -52,7 +55,7 @@ li a:hover {
 
 /* Add some shadows to create a card effect */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Some left and right padding inside the container */
@@ -87,3 +90,7 @@ li a:hover {
 .button:hover {
   background-color: #555;
 }
+body {background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);}
+
+
+
