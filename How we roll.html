@@ -1,15 +1,344 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HowWeRoll</title>
+    <style>
+        * {
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+        button {
+            color: rgb(0, 0, 0);
+            width: 200px;
+            height: 40px;
+            background-color: yellow;
+            border-width: 3px;
+            border-color: black;
+            font-size: 20px;
+            font-family: "arial", Helvetica, sans-serif;
+            padding: 3px;
+            margin: 5px;
+            height: min-content;
+            border-radius: 60px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        * {
+            font-family: Montserrat, sans-serif;
+        }
+
+        body {
+            background-color: lightcoral;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        .slider {
+            background: white;
+            width: 100%;
+            appearance: none;
+            align-items: center;
+
+        }
+
+        .slider:focus {
+            outline: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            appearance: none;
+            border: rgb(82, 151, 255);
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background: yellow;
+            cursor: pointer;
+            margin-top: -3px;
+        }
+
+        .slider::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 9px;
+            cursor: pointer;
+            box-shadow: rgb(0, 0, 0);
+            background: purple;
+            border-radius: 5px;
+            border: slateblue;
+        }
+
+        .slider:focus::-webkit-slider-runnable-track {
+            background: rgb(85, 162, 224);
+        }
+
+        #navn {
+            position: absolute;
+            left: 680px;
+            font-size: 20px;
+        }
+
+        #enavn {
+            position: absolute;
+            left: 680px;
+            font-size: 20px;
+        }
+
+        .navn {
+            position: absolute;
+            left: 580px;
+            font-size: 20px;
+
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header {
+            background: lightskyblue;
+            width: 100%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font: normal 4em "Montserrat Black", serif;
+            text-align: center;
+        }
+        nav {
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            transform: scaleX(0);
+            background: #333;
+            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
+
+        nav a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .grid-container {
+            padding-left: 10%;
+            display: grid;
+            grid-template-columns: 25% 40% 25%;
+            grid-gap: 10px;
+
+
+        }
+
+        .grid-container > div {
+            font-size: 20px;
+            background-color: lightskyblue;
+            /*border: 1px solid black;*/
+
+        }
+        .right {
+            text-align: right;
+        }
+        .left{
+            text-align: left;
+        }
+    </style>
+    <!-- Add hover effects to a href -->
 </head>
 <body>
-<div class="slidecontainer">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-</div>
+<!-- Her skrives alt innhold, som man ønsker å "tegne" på skjermen. -->
+<!-- Issue se https://html.spec.whatwg.org/multipage/forms.html#introduction-4 -->
+
+<header>
+    <h1>Group 2B</h1>
+    <div>
+        <nav>
+            <a href="/how-we-roll/index.html">Home Page</a>
+            <a href="/how-we-roll/hwr-report.html">See Report</a>
+            <a href="/how-we-roll/Group 2B">Download Readme</a>
+        </nav>
+    </div>
+</header>
+
+<br />
+<br>
+
+<h2>Parameter</h2>
+<h3>Customize the slider according to your studying habits</h3>
 
 
+<br>
+<form>
+    <p>
+        <label class="navn" for="navn">Name </label>
+        <input type="text" name="navn" id="navn" />
+    </p>
+    <br />
+    <p>
+        <label class="navn" for="enavn">Surname</label>
+        <input type="text" name="enavn" id="enavn" />
+    </p>
+    <br>
+    <br>
+    <br>
+
+    <div class="grid-container">
+
+        <div class="right" ><p>Earlybird</p></div>
+        <div>
+            <br />
+            <!-- dorn - day or night -->
+            <input type="range" class="slider" id="dorn" name="dorn" value="50"/>
+        </div>
+        <div class="left"><p>Nightowl</p></div>
+
+        <div class="right"><p>Work on it together</p></div>
+        <div>
+            <br />
+            <!-- cora - cooperate or alone -->
+            <input type="range" class="slider" id="cora" name="cora" value="50" />
+            <br />
+        </div>
+        <div class="left"><p>Go off alone and think</p></div>
+
+        <div class="right"><p>Tell me the backstory</p></div>
+        <div>
+            <br />
+            <!-- bors - backstory or sak-->
+            <input type="range" class="slider" id="bors" name="bors" value="50" />
+            <br />
+        </div>
+        <div class="left"><p>Cue to the chase</p></div>
+
+        <div class="right"><p>Need to talk it out</p></div>
+        <div>
+            <br />
+            <!-- sorg - snakke or gå videre-->
+            <input type="range" class="slider" id="sorg" name="sorg" value="50" />
+            <br />
+        </div>
+        <div class="left"><p>Need to move on</p></div>
+
+        <div class="right"><p>Verbal processor</p></div>
+        <div>
+            <br />
+            <!--"tidring" Tid eller ringe-->
+            <input
+                    type="range"
+                    class="slider"
+                    id="tidring"
+                    name="tidring"
+                    value="50"
+            />
+            <br />
+        </div>
+        <div class="left"><p>Mental processor</p></div>
+
+        <div class="right"><p>Schedule a time to chat</p></div>
+        <div>
+            <br />
+            <!--"klorw" - Kl. or whenever-->
+            <input
+                    type="range"
+                    class="slider"
+                    id="klorw"
+                    name="klorw"
+                    value="50"
+            />
+            <br />
+        </div>
+        <div class="left"><p>Interrupt me when you need me</p></div>
+
+        <div class="right"><p>Video chat</p></div>
+        <div>
+            <br />
+            <!--"klorw" - Kl. or whenever-->
+            <input
+                    type="range"
+                    class="slider"
+                    id="klorw"
+                    name="klorw"
+                    value="50"
+            />
+            <br />
+        </div>
+        <div class="left"><p>Slack/Text</p></div>
+
+        <div class="right"><p>09-17 Hours</p></div>
+        <div>
+            <br />
+            <!--"port" - prosess or tell me-->
+            <input type="range" class="slider" id="port" name="port" value="50" />
+            <br />
+        </div>
+        <div class="left"><p>I have no set schedule</p></div>
+
+
+    </div>
+    <br>
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+
+<script>
+    // Example POST method implementation using fetch:
+    async function postData(url = "", data = {}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+            method: "POST", // *GET, POST, PUT, DELETE, etc.
+            mode: "cors", // no-cors, *cors, same-origin
+            cache: "no-cache", // *default, no-cache, reload, force-cache,only-if-cached
+            credentials: "same-origin", // include, *same-origin, omit
+            headers: {
+                "Content-Type": "application/json",
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: "follow", // manual, *follow, error
+            referrerPolicy: "no-referrer", // no-referrer,*no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            body: JSON.stringify(data), // body data type must match"Content-Type"header
+        });
+        return response.json(); // parses JSON response into native JavaScriptobjects
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        const formJSON = Object.fromEntries(data.entries());
+        const results = document.querySelector(".results pre");
+        postData("https://bacit.info/", formJSON).then((data) => {
+            results.innerText = JSON.stringify(data, null, 2);
+        });
+    }
+    const form = document.querySelector("form");
+    form.addEventListener("submit", handleSubmit);
+</script>
+
+<br />
 </body>
-
 </html>

@@ -1,5 +1,5 @@
 h1 {
-  color: pink;
+  color: purple;
   font-family: verdana;
   font-size: 300%;
   margin-top: 30;
@@ -9,7 +9,7 @@ ul {
   margin: 10;
   padding: 0px;
   overflow: hidden;
-  background-color: pink;
+  background-color: purple;
 }
 
 li {
@@ -18,14 +18,14 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: whitesmoke;
  font-size:20px;
   text-align: center;
   padding: 10px 20px;
-  text-decoration: none;
+  text-decoration: snow;
 }
 .active{
-background-color: soft blue;
+background-color: white;
 color: white;
 }
 li a:hover {
@@ -34,18 +34,17 @@ li a:hover {
 }
 
 /* Meet the team*/
-/* Three columns side by side */
+/* six columns side by side */
 .column {
   float: left;
-  width: 20%;
-  margin-left:150px;
-  margin-bottom:10px;
-  padding: 10px;
+  width: 13%;
+  margin-left:75px;
+  margin-bottom:5px;
+  padding: 5px;
   background-color: #FFFFFF;
 
 }
 
-/* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 600px) {
   .column {
     width: 50%;
@@ -53,17 +52,14 @@ li a:hover {
   }
 }
 
-/* Add some shadows to create a card effect */
 .card {
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Some left and right padding inside the container */
 .container {
-  padding: 0 16px;
+  padding: 0 10px;
 }
 
-/* Clear floats */
 .container::after, .row::after {
   content: "";
   clear: both;
@@ -91,6 +87,11 @@ li a:hover {
   background-color: #555;
 }
 body {background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);}
+
+@media screen and (max-width: 768px) {
+  .all-columns {
+      width: 100%; }
+}
 
 
 
