@@ -34,7 +34,7 @@
 FS-SYSTEM 
 det som skal gjøre input om til output
 
-## FS-STSTEM-SEG
+## FS-SYSTEM-SEG
 FS-SYSTEM-SEG
 (vi må dele opp hele prosessen fra input til output - inkludert skisser av brukergrensesnitt)
 
