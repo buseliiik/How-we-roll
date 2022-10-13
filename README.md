@@ -25,6 +25,7 @@
 <!-- Om prosjektet -->
 ## Om prosjektet
 I faget IS-114 har vi fått oppgaven "Felles-skapet: HowWeRoll"-oppgaven. Oppgaven går ut på at vi som gruppe skal lage en webaplikasjon som kan være nyttig for bedre organisering av samarbeid i andre prosjekter. How We Roll går ut på å samle informasjon/data om prosjektmedlemmenes vaner og uvaner. Denne informasjonen skal bearbeides ved hjelp av et dataprogram og deretter skal vi kunne presentere resultatene til prosjektmedlemmene. 
+Gjennom prosessen har vi som gruppe blant annet benyttet [Github Projects](https://github.com/users/buseliiik/projects/4/views/1) for å kunne organisere, fordele og holde styr på oppgaven.
 
 <!-- FS-ANALYSE -->
 ## FS-ANALYSE
