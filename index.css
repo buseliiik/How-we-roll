@@ -90,7 +90,7 @@ li a:hover {
 .button:hover {
   background-color: #555;
 }
-body {background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);}
+body {background: linear-gradient(90deg, rgb(254, 241, 245) 0%, rgb(228, 239, 251) 100%);}
 
 
 
