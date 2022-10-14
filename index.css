@@ -38,10 +38,11 @@ li a:hover {
 .column {
   float: left;
   width: 20%;
-  margin-left:150px;
+  margin-left:120px;
   margin-bottom:10px;
   padding: 10px;
   background-color: #FFFFFF;
+  margin-right:10px;
 
 }
 
@@ -94,3 +95,54 @@ body {background: linear-gradient(90deg, rgb(254, 241, 245) 0%, rgb(228, 239, 25
 
 
 
+
+/** SLIDE RANGE STYLE*/
+
+
+.slidecontainer {
+  width: 100%;
+  text-align:center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+
+
+/*text align*/
+  .right {
+        text-align: right;
+      }
+      .left{
+        text-align: left;
+      }
