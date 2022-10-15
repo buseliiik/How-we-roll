@@ -6,8 +6,6 @@
 <!-- tab name-->
 <title>How we roll</title>
 
-
-
 <body>
 <h1 class=‘’header’’> Welcome to our website! </h1>
 <ul>
@@ -18,114 +16,173 @@
 </ul>
 
 
-<!-- SLIDER 1-->
-<div class="slidecontainer">
-    <p class="left">Discord:</p>
-    <p class="right">School:</p>
-    <input type="range" min="1" max="100" value="50">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Slider 2-->
-
 <!--Header-->
 <div class="header"><span class="header-text"></span></div>
 <div class="topnav">
 </div>
 <div class="main-content">
     <form id="HWR-form">
-        <!--Overskrift på profilsiden-->
+
+
+
+
+        <!--FORM-->
+        <br><br><br><br>
         <h2>Your information and your preferences to give your group insight into you and your habits</h2>
+        <br><br><br>
         <div id='localstorage-tekst'></div>
         <div class="form-div">
             <table class="form-table">
                 <tr>
                     <td class="text-align-right">
-                        <label for="fname">Fornavn:</label>
+                        <label for="fname">Name:</label>
                     </td>
-                    <td class="text-align-left"><input type="text" name="fname" id="fname" class='form-textinput' placeholder="Fornavn">
+                    <td class="text-align-left"><input type="text" name="fname" id="fname" class='form-textinput' >
                     <td class="text-align-right">
-                        <label for="lname">Etternavn:</label>
+                        <label for="lname">Surname:</label>
                     </td>
-                    <td class="text-align-left"><input type="text" name="lname" id="lname" class='form-textinput' placeholder="Etternavn"></td>
+                    <td class="text-align-left"><input type="text" name="lname" id="lname" class='form-textinput' ></td>
                 </tr>
             </table>
-            <!--Slidere-->
+
+
+            <!--RANGE SLIDERS-->
 
             <br><br><br><br>
 
-            <h4><label for="hours">Når jobber du best?</label></h4>
+            <h4><label for="hours" >When do you work best?</label></h4>
             <table class="slidercontainer">
                 <tr>
-                    <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider"></td>
+                    <td colspan="3"> <input type="range" name="hours" id="work time" min="0" max="100" value="50" class="slider" ></td>
                 </tr>
                 <tr>
-                    <td class="text-align-left"> Morgenfugl</td>
-                    <td class="text-align-center">Nøytral</td>
-                    <td class="text-align-right">Natteravn</td>
+                    <td class="text-align-left"> Earlybird</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Night owl</td>
                 </tr>
             </table>
-            <h4><label for="akt">Hvor aktiv er du?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="akt" id="akt" min="0" max="100" value="50" class="slider"></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left">Sofagris</td>
-                    <td class="text-align-center">Moderat</td>
-                    <td class="text-align-right">Atletisk</td>
-                </tr>
-            </table>
-            <h4><label for="work">Hvordan foretrekker du å jobbe?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="work" id="work" min="0" max="100" value="50" class="slider"></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left">Selvstendig</td>
-                    <td class="text-align-center">Nøytral</td>
-                    <td class="text-align-right">Samarbeid</td>
-                </tr>
-            </table>
-            <h4><label for="dify">Foretrekker du hjemmekontor eller fysisk oppmøte?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="dify" id="dify" min="0" max="100" value="50" class="slider"></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left">Hjemmekontor</td>
-                    <td class="text-align-center">Nøytral</td>
-                    <td class="text-align-right">Fysisk</td>
-                </tr>
-            </table>
-            <h4><label for="bgrp">Foretrekker du å fortelle bakgrunnshistorie eller gå rett på sak?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="bgrp" id="bgrp" min="0" max="100" value="50" class="slider"></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left">Bakgrunnshistorie</td>
-                    <td class="text-align-center">Nøytral</td>
-                    <td class="text-align-right">Rett på sak</td>
-                </tr>
-            </table>
+
             <br>
             <br>
+
+
+            <h4><label for="hours" >How do you prefer to work? </label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="hours" id="working style" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Work on it together</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Go off alone and think</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+
+            <h4><label for="hours" >Do you prefer to tell background stories or get cut to the chase?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="hours" id="case" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Tell me the back story</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Cut to the chase</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+
+            <h4><label for="hours" >How do you solve your problems? </label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="hours" id="solve to problems" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Need to talk about it</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Need to move on</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+
+            <h4><label for="hours" > How do you process your work?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="hours" id="processor" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Verbal processor</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Mental processor</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <h4><label for="hours" >How do you plan your meetings?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="hours" id="schedule" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Schedule a time to chat</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Interrupt me when you need me </td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <h4><label for="hours" >How do you want to interact with the group?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="hours" id="interact" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Video chat</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Slack/Text </td>
+                </tr>
+            </table>
+
+
+            <br>
+            <br>
+
+
+            <h4><label for="hours" >How is your work schedule?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> 9-17 Hours</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">I have no schedule</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+
             <div class="btncontainer">
                 <button class="btn submit" type="submit">Submit</button>
             </div>
@@ -133,7 +190,7 @@
     </form>
     <!--Resultat på undersøkelse-->
     <br><br>
-    <div class='results'>
+    <div class='results' style="margin-left:630px;">
        Results:<br>
         <pre></pre>
     </div>
