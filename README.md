@@ -33,4 +33,4 @@ For å se hvordan vi har jobbet med prosjektet har vi laget en rapport i en mark
 
 <!-- Nettsiden vår -->
 ## Nettsiden vår
-Trykk [her](https://github.com/buseliiik/How-we-roll/blob/main/Rapport-2b.md) for å se nettsiden vår! Den kan også sees ved å trykke på vår deployment gjennom github pages:))
+Trykk [her](/main/Rapport-2b.md) for å se nettsiden vår! Den kan også sees ved å trykke på vår deployment gjennom github pages:))
