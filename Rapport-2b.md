@@ -8,7 +8,7 @@ Denne markdown filen vil inneholde en beskrivelse av fremgangsmåten vår, FS-AN
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Fremgangsmåte">Om prosjektet</a>
+      <a href="#fremgangsmåte">Fremgangsmåte</a>
     <li>
       <a href="#fs-analyse">FS-ANALYSE</a>
     <li><a href="#fs-system">FS-SYSTEM</a></li>
