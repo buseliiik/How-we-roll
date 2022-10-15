@@ -1,5 +1,8 @@
 # RAPPORT GRUPPE 2B #
 
+Denne markdown filen vil inneholde en beskrivelse av fremgangsmåten vår, FS-ANALYSE, FS-SYSTEM, FS-SYSTEM-SEG og FS-TESTER. Resten, som er GR-KUNN-FERD og GITHUB-SAMARBEID leverer vi som pdf i canvas. Dette er for å gjøre oppgaven oversiktelig og inkludere det innholdet som er mest relevant til oppgaven i repositoryen. 
+
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
