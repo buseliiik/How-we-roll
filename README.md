@@ -29,7 +29,7 @@ Gjennom prosessen har vi som gruppe blant annet benyttet [Github Projects](https
 
 <!-- Rapporten vår -->
 ## Rapporten vår
-For å se hvordan vi har jobbet med prosjektet har vi laget en rapport i en markdown fil. Rapporten vår ligger i repository og heter Rapport-2b.md. Eller trykk [her](/../blob/main/Rapport-2b.md) for å komme direkte til rapporten.
+For å se hvordan vi har jobbet med prosjektet har vi laget en rapport i en markdown fil. Rapporten vår ligger i repository og heter Rapport-2b.md. Eller trykk [her](/Rapport-2b.md) for å komme direkte til rapporten.
 
 <!-- Nettsiden vår -->
 ## Nettsiden vår
