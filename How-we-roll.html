@@ -21,7 +21,7 @@
 <div class="topnav">
 </div>
 <div class="main-content">
-    <form id="HWR-form">
+    <form>
 
 
 
@@ -50,10 +50,10 @@
 
             <br><br><br><br>
 
-            <h4><label for="hours" >When do you work best?</label></h4>
+            <h4><label for="work time" >When do you work best?</label></h4>
             <table class="slidercontainer">
                 <tr>
-                    <td colspan="3"> <input type="range" name="hours" id="work time" min="0" max="100" value="50" class="slider" ></td>
+                    <td colspan="3"> <input type="range" name="work time" id="work time" min="0" max="100" value="50" class="slider" ></td>
                 </tr>
                 <tr>
                     <td class="text-align-left"> Earlybird</td>
@@ -66,10 +66,10 @@
             <br>
 
 
-            <h4><label for="hours" >How do you prefer to work? </label></h4>
+            <h4><label for="working style" >How do you prefer to work? </label></h4>
             <table class="slidercontainer">
                 <tr>
-                    <td colspan="3"><input type="range" name="hours" id="working style" min="0" max="100" value="50" class="slider" ></td>
+                    <td colspan="3"><input type="range" name="working style" id="working style" min="0" max="100" value="50" class="slider" ></td>
                 </tr>
                 <tr>
                     <td class="text-align-left"> Work on it together</td>
@@ -82,10 +82,10 @@
             <br>
 
 
-            <h4><label for="hours" >Do you prefer to tell background stories or get cut to the chase?</label></h4>
+            <h4><label for="case" >Do you prefer to tell background stories or get cut to the chase?</label></h4>
             <table class="slidercontainer">
                 <tr>
-                    <td colspan="3"><input type="range" name="hours" id="case" min="0" max="100" value="50" class="slider" ></td>
+                    <td colspan="3"><input type="range" name="case" id="case" min="0" max="100" value="50" class="slider" ></td>
                 </tr>
                 <tr>
                     <td class="text-align-left"> Tell me the back story</td>
@@ -98,10 +98,10 @@
             <br>
 
 
-            <h4><label for="hours" >How do you solve your problems? </label></h4>
+            <h4><label for="solve to problems" >How do you solve your problems? </label></h4>
             <table class="slidercontainer">
                 <tr>
-                    <td colspan="3"><input type="range" name="hours" id="solve to problems" min="0" max="100" value="50" class="slider" ></td>
+                    <td colspan="3"><input type="range" name="solve to problems" id="solve to problems" min="0" max="100" value="50" class="slider" ></td>
                 </tr>
                 <tr>
                     <td class="text-align-left"> Need to talk about it</td>
@@ -114,10 +114,10 @@
             <br>
 
 
-            <h4><label for="hours" > How do you process your work?</label></h4>
+            <h4><label for="processor" > How do you process your work?</label></h4>
             <table class="slidercontainer">
                 <tr>
-                    <td colspan="3"><input type="range" name="hours" id="processor" min="0" max="100" value="50" class="slider" ></td>
+                    <td colspan="3"><input type="range" name="processor" id="processor" min="0" max="100" value="50" class="slider" ></td>
                 </tr>
                 <tr>
                     <td class="text-align-left"> Verbal processor</td>
@@ -129,10 +129,10 @@
             <br>
             <br>
 
-            <h4><label for="hours" >How do you plan your meetings?</label></h4>
+            <h4><label for="schedule" >How do you plan your meetings?</label></h4>
             <table class="slidercontainer">
                 <tr>
-                    <td colspan="3"><input type="range" name="hours" id="schedule" min="0" max="100" value="50" class="slider" ></td>
+                    <td colspan="3"><input type="range" name="schedule" id="schedule" min="0" max="100" value="50" class="slider" ></td>
                 </tr>
                 <tr>
                     <td class="text-align-left"> Schedule a time to chat</td>
@@ -144,10 +144,10 @@
             <br>
             <br>
 
-            <h4><label for="hours" >How do you want to interact with the group?</label></h4>
+            <h4><label for="interact" >How do you want to interact with the group?</label></h4>
             <table class="slidercontainer">
                 <tr>
-                    <td colspan="3"><input type="range" name="hours" id="interact" min="0" max="100" value="50" class="slider" ></td>
+                    <td colspan="3"><input type="range" name="interact" id="interact" min="0" max="100" value="50" class="slider" ></td>
                 </tr>
                 <tr>
                     <td class="text-align-left"> Video chat</td>
@@ -183,6 +183,7 @@
 
 
 
+
             <div class="btncontainer">
                 <button class="btn submit" type="submit">Submit</button>
             </div>
@@ -197,54 +198,37 @@
 </div>
 <!--Javascript for dokumentet-->
 <script>
+      // Example POST method implementation using fetch:
+      async function postData(url = "", data = {}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          mode: "cors", // no-cors, *cors, same-origin
+          cache: "no-cache", // *default, no-cache, reload, force-cache,only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          redirect: "follow", // manual, *follow, error
+          referrerPolicy: "no-referrer", // no-referrer,*no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          body: JSON.stringify(data), // body data type must match"Content-Type"header
+        });
+        return response.json(); // parses JSON response into native JavaScriptobjects
+      }
 
-            // From https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (seen 2021-09-27)
-            // Example POST method implementation using fetch:
-            async function postData(url = '', data = {}) {
-                // Default options are marked with *
-                const response = await fetch(url, {
-                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-                    mode: 'cors', // no-cors, *cors, same-origin
-                    cache: 'no-cache', // *default, no-cache, reload, force-cache,only-if-cached
-                    credentials: 'same-origin', // include, *same-origin, omit
-                    headers: {
-                        'Content-Type': 'application/json',
-                        // 'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                    redirect: 'follow', // manual, *follow, error
-                    referrerPolicy: 'no-referrer', // no-referrer,*no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-                    body: JSON.stringify(data) // body data type must match"Content-Type"header
-                });
-                return response.json(); // parses JSON response into native JavaScriptobjects
-            }
-             function handleSubmit(event) {
-                event.preventDefault();
-                const data = new FormData(event.target);
-                const formJSON = Object.fromEntries(data.entries());
-                const results = document.querySelector('.results pre');
-                postData('https://bacit.info/', formJSON)
-                    .then(data => {
-                        let trxid = JSON.stringify(data.trxid, null, 2).replace(/"/g, "");
-                        let time = JSON.stringify(data.time, null, 2).replace(/"/g, "");
-                        localStorage.setItem("trxid", trxid);
-                        localStorage.setItem("time", time);
-                        results.innerText = JSON.stringify(data, null, 2);
-                        document.getElementById("HWR-form").reset();
-                        ScrollDown();
-                        return false;
-                    });
-            }
-            const form = document.querySelector('form');
-            form.addEventListener('submit', handleSubmit);
-            // just an alert message for when users try to use the search bar
-            function OnlyAPlaceHolder() {
-                alert("this item doesn't have much functionality yet and is only a placeholder")
-            }
-
-            function ScrollDown() {
-                window.scrollTo(0, document.body.scrollHeight);
-            }
-        </script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        const formJSON = Object.fromEntries(data.entries());
+        const results = document.querySelector(".results pre");
+        postData("https://bacit.info/", formJSON).then((data) => {
+          results.innerText = JSON.stringify(data, null, 2);
+        });
+      }
+      const form = document.querySelector("form");
+      form.addEventListener("submit", handleSubmit);
+    </script>
 
 
 
