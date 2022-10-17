@@ -2,61 +2,237 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
-<body>
+<!-- tab name-->
+<title>How we roll</title>
 
+<body>
 <h1 class=‘’header’’> Welcome to our website! </h1>
 <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="how-we-roll.html">How we roll</a></li>
-    <li><a href="">See Report</a></li>
-    <li><a href="">Download Readme</a></li>
+    <li><a href="How-we-roll.html">How we roll</a></li>
+    <li><a href="raport.html">Project Progress</a></li>
+    <li><a href="">Readme</a></li>
 </ul>
 
 
-<!-- SLIDER-->
-
-<div class="slidecontainer">
-    <p class="left">Discord:</p>
-    <p class="right">School:</p>
-    <input type="range" min="1" max="100" value="50">
+<!--Header-->
+<div class="header"><span class="header-text"></span></div>
+<div class="topnav">
 </div>
+<div class="main-content">
+    <form>
 
-<div class="slidecontainer">
-    <p>Default range slider:</p>
-    <input type="range" min="1" max="100" value="50">
-</div>
 
-<div class="slidecontainer">
-    <p>Default range slider:</p>
-    <input type="range" min="1" max="100" value="50">
-</div>
 
-<div class="slidecontainer">
-    <p>Default range slider:</p>
-    <input type="range" min="1" max="100" value="50">
-</div>
 
-<div class="slidecontainer">
-    <p>Default range slider</p>
-    <input type="range" min="1" max="100" value="50">
-</div>
+        <!--FORM-->
+        <br><br><br><br>
+        <h2>Your information and your preferences to give your group insight into you and your habits</h2>
+        <br><br><br>
+        <div id='localstorage-tekst'></div>
+        <div class="form-div">
+            <table class="form-table">
+                <tr>
+                    <td class="text-align-right">
+                        <label for="fname">Name:</label>
+                    </td>
+                    <td class="text-align-left"><input type="text" name="fname" id="fname" class='form-textinput' >
+                    <td class="text-align-right">
+                        <label for="lname">Surname:</label>
+                    </td>
+                    <td class="text-align-left"><input type="text" name="lname" id="lname" class='form-textinput' ></td>
+                </tr>
+            </table>
 
-<div class="slidecontainer">
-    <p>Default range slider </p>
-    <input type="range" min="1" max="100" value="50">
-</div>
 
-<div class="slidecontainer">
-    <p>Default range slider:</p>
-    <input type="range" min="1" max="100" value="50">
+            <!--RANGE SLIDERS-->
+
+            <br><br><br><br>
+
+            <h4><label for="work time" >When do you work best?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"> <input type="range" name="work time" id="work time" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Earlybird</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Night owl</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+
+            <h4><label for="working style" >How do you prefer to work? </label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="working style" id="working style" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Work on it together</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Go off alone and think</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+
+            <h4><label for="case" >Do you prefer to tell background stories or get cut to the chase?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="case" id="case" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Tell me the back story</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Cut to the chase</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+
+            <h4><label for="solve to problems" >How do you solve your problems? </label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="solve to problems" id="solve to problems" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Need to talk about it</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Need to move on</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+
+            <h4><label for="processor" > How do you process your work?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="processor" id="processor" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Verbal processor</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Mental processor</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <h4><label for="schedule" >How do you plan your meetings?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="schedule" id="schedule" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Schedule a time to chat</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Interrupt me when you need me </td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <h4><label for="interact" >How do you want to interact with the group?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="interact" id="interact" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Video chat</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Slack/Text </td>
+                </tr>
+            </table>
+
+
+            <br>
+            <br>
+
+
+            <h4><label for="hours" >How is your work schedule?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> 9-17 Hours</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">I have no schedule</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+
+
+            <div class="btncontainer">
+                <button class="btn submit" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    <!--Resultat på undersøkelse-->
+    <br><br>
+    <div class='results' style="margin-left:630px;">
+       Results:<br>
+        <pre></pre>
+    </div>
 </div>
+<!--Javascript for dokumentet-->
+<script>
+      // Example POST method implementation using fetch:
+      async function postData(url = "", data = {}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          mode: "cors", // no-cors, *cors, same-origin
+          cache: "no-cache", // *default, no-cache, reload, force-cache,only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          redirect: "follow", // manual, *follow, error
+          referrerPolicy: "no-referrer", // no-referrer,*no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+          body: JSON.stringify(data), // body data type must match"Content-Type"header
+        });
+        return response.json(); // parses JSON response into native JavaScriptobjects
+      }
+
+      function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        const formJSON = Object.fromEntries(data.entries());
+        const results = document.querySelector(".results pre");
+        postData("https://bacit.info/", formJSON).then((data) => {
+          results.innerText = JSON.stringify(data, null, 2);
+        });
+      }
+      const form = document.querySelector("form");
+      form.addEventListener("submit", handleSubmit);
+    </script>
 
 
 
 
 
 </body>
-
 </html>
