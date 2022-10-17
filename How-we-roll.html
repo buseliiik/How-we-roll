@@ -13,7 +13,7 @@
     <li><a href="How-we-roll.html">How we roll</a></li>
     <li><a href="raport.html">Project Progress</a></li>
     <li><a href="resultat.html">Results</a></li>
-    <li><a href="">Readme</a></li>
+    <li><a href="download-readme.html">Readme</a></li>
 </ul>
 
 
@@ -173,6 +173,50 @@
                     <td class="text-align-right">I have no schedule</td>
                 </tr>
             </table>
+            <br>
+            <br>
+            <h4><label for="often" >How often do you work?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="often" id="often" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Finish homework quickly</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Do the homework little by little every day</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+
+            <h4><label for="focus" >How do you focus?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="focus" id="focus" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> Need silence to focus</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Not having problem to focus</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <h4><label for="in group" >How do you work in a group?</label></h4>
+            <table class="slidercontainer">
+                <tr>
+                    <td colspan="3"><input type="range" name="in group" id="in group" min="0" max="100" value="50" class="slider" ></td>
+                </tr>
+                <tr>
+                    <td class="text-align-left"> I want to be part of the process</td>
+                    <td class="text-align-center">Mean</td>
+                    <td class="text-align-right">Just tell me what to do</td>
+                </tr>
+            </table>
 
             <br>
             <br>
@@ -181,15 +225,15 @@
 
 
 
-
-
-
-
+    <!--submit button -->
             <div class="btncontainer">
                 <button class="btn submit" type="submit">Submit</button>
             </div>
         </div>
     </form>
+
+
+
     <!--Resultat på undersøkelse-->
     <br><br>
     <div class='results' style="margin-left:630px;">
@@ -197,6 +241,9 @@
         <pre></pre>
     </div>
 </div>
+
+
+
 <!--Javascript for dokumentet-->
 <script>
       // Example POST method implementation using fetch:
