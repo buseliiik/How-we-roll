@@ -44,6 +44,11 @@ Dette er den prioriterte rekkefølgen på våre brukerhistorier. Vi valgte denne
 <!-- FS-SYSTEM -->
 ## FS-SYSTEM
 FS-SYSTEM 
+
+
+## FS-SYSTEM-STEG
+FS-SYSTEM-STEG
+
 __Skisser:__
 
 
@@ -55,10 +60,6 @@ __Skisser:__
 
 <img width="612" alt="Skjermbilde 2022-10-28 kl  16 43 36" src="https://user-images.githubusercontent.com/111752047/198654482-2b6d75a9-1786-43ea-abbd-e0b816ca80be.png">
 
-
-## FS-SYSTEM-STEG
-FS-SYSTEM-STEG
-(vi må dele opp hele prosessen fra input til output - inkludert skisser av brukergrensesnitt)
 
 <!-- FS-TESTER -->
 ## FS-TESTER
