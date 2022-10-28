@@ -45,7 +45,7 @@ Dette er den prioriterte rekkefølgen på våre brukerhistorier. Vi valgte denne
 ## FS-SYSTEM
 FS-SYSTEM 
 Skisser:
-![Input to output](/path/to/image. png "Text to show on mouseover") .
+![](/bilder/Skjermbilde 2022-10-28 kl. 16.36.14.png "Input to output")
 
 ## FS-SYSTEM-STEG
 FS-SYSTEM-STEG
