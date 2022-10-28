@@ -44,8 +44,17 @@ Dette er den prioriterte rekkefølgen på våre brukerhistorier. Vi valgte denne
 <!-- FS-SYSTEM -->
 ## FS-SYSTEM
 FS-SYSTEM 
-Skisser:
-![](/bilder/Skjermbilde 2022-10-28 kl. 16.36.14.png "Input to output")
+__Skisser:__
+
+
+<img width="595" alt="Skjermbilde 2022-10-28 kl  16 36 14" src="https://user-images.githubusercontent.com/111752047/198653736-95fc4f2e-1d11-4c43-a5c8-0e550521e4e1.png">
+
+
+<img width="463" alt="Skjermbilde 2022-10-28 kl  16 45 25" src="https://user-images.githubusercontent.com/111752047/198655860-040e0414-53dd-49a3-bc1d-d4d9552fabc5.png">
+
+
+<img width="612" alt="Skjermbilde 2022-10-28 kl  16 43 36" src="https://user-images.githubusercontent.com/111752047/198654482-2b6d75a9-1786-43ea-abbd-e0b816ca80be.png">
+
 
 ## FS-SYSTEM-STEG
 FS-SYSTEM-STEG
