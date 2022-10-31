@@ -10,10 +10,6 @@
       <a href="#rapporten-vår">Rapporten vår</a>
       <li><a href="#nettsiden-vår">Nettsiden vår</a></li>
     <li><a href="#kilder">Kilder</a></li>
-    <li><a href="#fs-tester">FS-TESTER</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
