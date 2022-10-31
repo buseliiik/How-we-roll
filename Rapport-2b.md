@@ -56,10 +56,37 @@ __Skisser:__
 
 
 <img width="463" alt="Skjermbilde 2022-10-28 kl  16 45 25" src="https://user-images.githubusercontent.com/111752047/198655860-040e0414-53dd-49a3-bc1d-d4d9552fabc5.png">
-
+Forskjellige skisser som viser prosessen fra INPUT til OUTPUT.
 
 <img width="612" alt="Skjermbilde 2022-10-28 kl  16 43 36" src="https://user-images.githubusercontent.com/111752047/198654482-2b6d75a9-1786-43ea-abbd-e0b816ca80be.png">
-Forskjellige skisser som viser prosessen fra INPUT til OUTPUT. 
+
+
+Skissen fra FS-SYSTEM er en abstrakt skisse til hvordan systemet vårt skal fungere. Med systemet prater vi om å omgjøre brukerens input til brukbar output. Istedenfor at vi går rett på kodingen, blir det mer oversiktlig hvis vi bryter oppgaven ned til mer abstrakte modeller.
+Hvordan input dataen skal sendes inn og hvordan output dataen blir hentet vil bli slik:
+
+* Input
+    - Brukerens fornavn og etternavn i to forskjellige tekst input bokser.
+    - Denne dataen må fylles ut får brukeren kan sende inn sin besvarelse, dette er for å unngå systemfeil.
+    
+* Slider dataen, brukerens meninger om spørsmålene vi stiller hverandre.
+    - Denne dataen blir lagret som talldata.
+    - På grunn av at det er flere sliders kunne dette blitt lagret som array, men det kompliserer oppgaven mer og er ikke nødvendig fordi antall sliders er           statisk.
+   
+* Dato når dataene blir sendt inn.
+    - Dette vil egentlig ikke brukeren fylle ut, men heller gjøres automatisk av nettsiden.
+    
+* En individuell id.
+    - Dette kan løses med et veldig stort tilfeldig tall. Tallet kan dobbelsjekkes med de eksisterende tallene i serveren slik at de ikke ‘klasher’.
+Denne input dataen vil bli sendt fra nettsiden til EKSTERN-SERVER. Neste steget nå er å kunne hente og lese denne dataen.
+
+* Output - All dataen fra EKSTERN-SERVER vil bli hentet inn når siden lastes ned og den vil bli lagret slik:
+  * Class, data satt inn i ei struktur. I klassen må vi ha:
+    - Navn
+    - Korresponderende id
+    - Hver individuell tall verdi til hver slider, som sagt kunne dette være en array men det blir mer komplisert enn nødvendig
+
+I det fjerde siste punktet var “class” nevnt og forklart som strukturert data. Ved å bruke klasser, som blir dannet til objekter, vil gjøre koden mye renere og lese og mye lettere for å samarbeide i koden.
+
 
 <img width="511" alt="Skjermbilde 2022-10-31 kl  14 56 29" src="https://user-images.githubusercontent.com/111752047/199025280-a5b46a1b-e6de-4acd-9bb4-cfbc3a0a6c80.png">
 Datamodellen
