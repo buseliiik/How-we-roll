@@ -102,14 +102,14 @@ body {background: linear-gradient(90deg, rgb(254, 241, 245) 0%, rgb(228, 239, 25
 
 
 
+
+
+
 /** SLIDE RANGE STYLE*/
-
-
 .slidecontainer {
   width: 100%;
   text-align:center;
 }
-
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -120,13 +120,10 @@ body {background: linear-gradient(90deg, rgb(254, 241, 245) 0%, rgb(228, 239, 25
   -webkit-transition: .2s;
   transition: opacity .2s;
 
-
 }
-
 .slider:hover {
   opacity: 1;
 }
-
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -142,6 +139,8 @@ body {background: linear-gradient(90deg, rgb(254, 241, 245) 0%, rgb(228, 239, 25
   background: #04AA6D;
   cursor: pointer;
 }
+
+
 
 
 
