@@ -59,7 +59,10 @@ __Skisser:__
 
 
 <img width="612" alt="Skjermbilde 2022-10-28 kl  16 43 36" src="https://user-images.githubusercontent.com/111752047/198654482-2b6d75a9-1786-43ea-abbd-e0b816ca80be.png">
+Forskjellige skisser som viser prosessen fra INPUT til OUTPUT. 
 
+<img width="511" alt="Skjermbilde 2022-10-31 kl  14 56 29" src="https://user-images.githubusercontent.com/111752047/199025280-a5b46a1b-e6de-4acd-9bb4-cfbc3a0a6c80.png">
+Datamodellen
 
 <!-- FS-TESTER -->
 ## FS-TESTER
