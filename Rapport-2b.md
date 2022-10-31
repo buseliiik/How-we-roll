@@ -42,12 +42,10 @@ __Ekstra brukerhistorier:__
 Dette er den prioriterte rekkefølgen på våre brukerhistorier. Vi valgte denne prioriteringen utifra hva vi mente var vitkigst å få med, og hva som var bonus poeng om vi rakk. Da den obligatoriske delen var første prioritert, deretter gruppe CV som er nyttig for lærerene å se hvem som deltok i prosjektet, til slutt var det eksta brukerhistorier som ikke var like kritisk. 
 
 <!-- FS-SYSTEM -->
-## FS-SYSTEM
-FS-SYSTEM 
+## FS-SYSTEM 
 
 
-## FS-SYSTEM-STEG
-FS-SYSTEM-STEG
+### FS-SYSTEM-STEG
 
 __Skisser:__
 
