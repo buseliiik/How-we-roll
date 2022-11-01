@@ -30,7 +30,7 @@
         <br><br><br><br>
         <h2>Your information and your preferences to give your group insight into you and your habits</h2>
         <br><br><br>
-        <div id='localstorage-tekst'></div>
+
         <div class="form-div">
             <table class="form-table">
                 <tr>
@@ -244,57 +244,46 @@
 
 <!--Javascript for dokumentet-->
 <script>
-            //Sjekker om skjemaet er fylt ut fra før og skriver ut en melding til div-elementet med ID "localstorage-tekst".
-            if (localStorage.trxid) {
-                document.getElementById("localstorage-tekst").innerHTML = "<span></span><br><br>";
-            }
-            // From https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (seen 2021-09-27)
-            // Example POST method implementation using fetch:
+
+            // source: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (2022-11-1)
+
+          //the asynchronous function that posts the data from handleSubmit function
             async function postData(url ='https://bacit.info/', data = {}) {
-                // Default options are marked with *
+
+                // waiting for the handleSubmit function to be called
                 const response = await fetch(url, {
-                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-                    mode: 'cors', // no-cors, *cors, same-origin
-                    cache: 'no-cache', // *default, no-cache, reload, force-cache,only-if-cached
-                    credentials: 'same-origin', // include, *same-origin, omit
+                    method: 'POST', // Used post because we are posting data
+                    mode: 'cors', // using the default value
+                    cache: 'no-cache', //we don't need cache
+                    credentials: 'same-origin', // using default value
                     headers: {
                         'Content-Type': 'application/json',
-                        // 'Content-Type': 'application/x-www-form-urlencoded',
+                        // the data is sent as a json object literal,
                     },
-                    redirect: 'follow', // manual, *follow, error
-                    referrerPolicy: 'no-referrer', // no-referrer,*no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-                    body: JSON.stringify(data) // body data type must match"Content-Type"header
+                    redirect: 'follow', // default value
+                    referrerPolicy: 'no-referrer', // default value
+                    body: JSON.stringify(data) // body data type matching "Content-Type"
                 });
-                return response.json(); // parses JSON response into native JavaScriptobjects
+                return response.json(); // parsing JSON response to JavaScript objects
             }
 
+            //the function that submits the data to postData function
             function handleSubmit(event) {
                 event.preventDefault();
-                const data = new FormData(event.target);
-                const formJSON = Object.fromEntries(data.entries());
-                const results = document.querySelector('.results pre');
-                postData('https://bacit.info/', formJSON)
+                const data = new FormData(event.target); // setting the target as a form
+                const formJSON = Object.fromEntries(data.entries());// reaching the data
+                const results = document.querySelector('.results pre'); // in order to post the data to website as well
+                postData('https://bacit.info/', formJSON) // posting the json form to bacit info
                     .then(data => {
-                        let trxid = JSON.stringify(data.trxid, null, 2).replace(/"/g, "");
-                        let time = JSON.stringify(data.time, null, 2).replace(/"/g, "");
-                        localStorage.setItem("trxid", trxid);
-                        localStorage.setItem("time", time);
+                        let trxid = JSON.stringify(data.trxid, null, 2).replace(/"/g, ""); //updating the url so that we can find the data
+                        let time = JSON.stringify(data.time, null, 2).replace(/"/g, ""); //updating the url so that we can find the data
                         results.innerText = JSON.stringify(data, null, 2);
-                        document.getElementById("HWR-form").reset();
-                        ScrollDown();
+                        document.getElementById("HWR-form").reset(); //resetting the form after posting it
                         return false;
                     });
             }
-            const form = document.querySelector('form');
-            form.addEventListener('submit', handleSubmit);
-            // just an alert message for when users try to use the search bar
-            function OnlyAPlaceHolder() {
-                alert("this item doesn't have much functionality yet and is only a placeholder")
-            }
-
-            function ScrollDown() {
-                window.scrollTo(0, document.body.scrollHeight);
-            }
+            const form = document.querySelector('form'); //selecting the form
+            form.addEventListener('submit', handleSubmit); // adding the handleSubmit function as a submit event
         </script>
 </body>
 </html>
