@@ -18,14 +18,217 @@
     </ul>
 
 <div = "cd">
-	<canvas id="c" width="400" height="1000" style="border:1px solid #000000;">
+	<canvas id="c" width="950" height="1500" style="border:1px solid #000000;">
 	canvas støttes ikke av nettleseren din
 	</canvas>
 </div>
 
 <script>
-var c = document.getElementById("c");
-var ctx = c.getContext("2d");
+/*https://www.w3schools.com/html/html5_canvas.asp*/
+    var canvas = document.getElementById("c"); /*definere canvas elementet i javascript koden vår*/
+    var ctx = canvas.getContext("2d"); /*canvas context*/
+
+/*https://www.w3schools.com/js/js_classes.asp*/
+    /*klasser, disse vil skape renere kode*/
+
+    //posisjoner til barene
+    const sx = 95;
+    const p1 = [sx, 100], p2 = [sx, 200], p3 = [sx, 300], p4 = [sx, 400], p5 = [sx, 500], p6 = [sx, 600], p7 = [sx, 700], p8 = [sx, 800], p9 = [sx, 900], p10 = [sx, 1000], p11 = [sx, 1100];
+    //Etter x1200 can vi tegne ned navnene og deres korrisponderende farge
+
+    //egentlig skulle 'barsene' være klasser, men det ble funksjoner istedet
+    //fordi jeg kunne ikke redigere klassene inni 'fetch data' funksjonen
+    function drawbar(t1, t2, t, p, ctx) {
+        ctx.font = "15px Arial";
+        ctx.textAlign = 'center';
+        ctx.fillText(t1, p[0] + 10, p[1] + 25);
+        ctx.fillText(t2, p[0] + 690, p[1] + 25);
+        ctx.fillText(t, p[0] + 350, p[1] - 20);
+        ctx.stroke();
+        ctx.moveTo(p[0], p[1]);
+        ctx.lineTo(p[0] + 700, p[1]);
+        ctx.stroke();
+    }
+    //Her er funksjon til å tegne sirkel
+    function drawcircle(v, p, c) {
+        ctx.moveTo(p[0], p[1]);
+        ctx.arc(p[0] + v * 7, p[1], Math.floor(Math.random() * 10) + 5, 0, 2 * Math.PI, false);
+        ctx.fillStyle = c;
+        ctx.fill();
+    }
+    function drawbottom(fn, ln, c, p) {
+        ctx.beginPath();
+        ctx.moveTo(sx, p);
+        ctx.fillStyle = "#000000";
+        ctx.fillText(": " + fn + " " + ln, sx + 15, p + 5);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.fillStyle = c;
+        ctx.arc(sx, p, 10, 0, 2 * Math.PI, false);
+        ctx.fill();
+    }
+    //her skriver jeg ned alle 'barsene'
+    drawbar("Early bird", "Night owl","When do you work best?", p1, ctx);
+    drawbar("Work on it together", "Go off alone and think","How do you prefer to work?", p2, ctx);
+    drawbar("Tell me the back story", "Cut to the chase","Do you prefer to tell background stories or get cut to the chase?", p3, ctx);
+    drawbar("Need to talk about it", "Need to move on", "How do you solve your problems?", p4, ctx);
+    drawbar("Verbal processor", "Metntal processor", "How do you process your work?", p5, ctx);
+    drawbar("Schedule time to chat", "Interrupt me when you need me", "How do you plan your meetings?", p6, ctx);
+    drawbar("Video chat", "Texts in discord", "How do you want to interact with the group?", p7, ctx);
+    drawbar("9-17 hours", "I have no schedule", "How is your work schedule?", p8, ctx);
+    drawbar("Finish the homework quickly", "Do the homework little by little every day", "How often do you work?", p9, ctx);
+    drawbar("Need silence to focus", "Not having problem to focus", "How do you focus", p10, ctx);
+    drawbar("I want to be part of the process", "Just tell me what to do", "How do you work in a group", p11, ctx);
+
+    ctx.textAlign = 'left';
+    //hente inn json infoen og på samme tid tegne dem...
+    //buse
+    fetch('https://bacit.info/hwr/20221031172712-750b13f74c161fd10b7b46cea245269b.json')
+        .then(function (resp) {
+            return resp.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            //Tilfeldig farge variabel, https://css-tricks.com/snippets/javascript/random-hex-color/
+            c = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+            ctx.beginPath();
+            //for hver verdi
+            drawcircle(data.worktime, p1, c);
+            drawcircle(data.workingstyle, p2, c);
+            drawcircle(data.case, p3, c);
+            drawcircle(data.sproblems, p4, c);
+            drawcircle(data.processor, p5, c);
+            drawcircle(data.schedule, p6, c);
+            drawcircle(data.interact, p7, c);
+            drawcircle(data.hours, p8, c);
+            drawcircle(data.often, p9, c);
+            drawcircle(data.focus, p10, c);
+            drawcircle(data.ingroup, p11, c);
+
+            //Bunden...
+            drawbottom(data.fname, data.lname, c, 1200);
+        });
+    //jeppe
+    fetch('https://bacit.info/hwr/20221031155101-1746d8459fdd74f6a6d619d213c6e17a.json')
+        .then(function (resp) {
+            return resp.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            c = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+            ctx.beginPath();
+            drawcircle(data.worktime, p1, c);
+            drawcircle(data.workingstyle, p2, c);
+            drawcircle(data.case, p3, c);
+            drawcircle(data.sproblems, p4, c);
+            drawcircle(data.processor, p5, c);
+            drawcircle(data.schedule, p6, c);
+            drawcircle(data.interact, p7, c);
+            drawcircle(data.hours, p8, c);
+            drawcircle(data.often, p9, c);
+            drawcircle(data.focus, p10, c);
+            drawcircle(data.ingroup, p11, c);
+
+            drawbottom(data.fname, data.lname, c, 1250);
+        });
+    //martin
+    fetch('https://bacit.info/hwr/20221031151731-7e94fa418d07c8bd6e2f562efd9a5e6e.json')
+        .then(function (resp) {
+            return resp.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            c = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+            ctx.beginPath();
+            drawcircle(data.worktime, p1, c);
+            drawcircle(data.workingstyle, p2, c);
+            drawcircle(data.case, p3, c);
+            drawcircle(data.sproblems, p4, c);
+            drawcircle(data.processor, p5, c);
+            drawcircle(data.schedule, p6, c);
+            drawcircle(data.interact, p7, c);
+            drawcircle(data.hours, p8, c);
+            drawcircle(data.often, p9, c);
+            drawcircle(data.focus, p10, c);
+            drawcircle(data.ingroup, p11, c);
+
+            drawbottom(data.fname, data.lname, c, 1300);
+        });
+    //mie
+    fetch('https://bacit.info/hwr/20221031155038-f52541e89a612b43fef3d0b84253a79b.json')
+        .then(function (resp) {
+            return resp.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            c = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+            ctx.beginPath();
+            drawcircle(data.worktime, p1, c);
+            drawcircle(data.workingstyle, p2, c);
+            drawcircle(data.case, p3, c);
+            drawcircle(data.sproblems, p4, c);
+            drawcircle(data.processor, p5, c);
+            drawcircle(data.schedule, p6, c);
+            drawcircle(data.interact, p7, c);
+            drawcircle(data.hours, p8, c);
+            drawcircle(data.often, p9, c);
+            drawcircle(data.focus, p10, c);
+            drawcircle(data.ingroup, p11, c);
+
+            drawbottom(data.fname, data.lname, c, 1350);
+        });
+    //stein, den kuleste
+    fetch('https://bacit.info/hwr/20221101125432-10dfe93cb4f5449749e57a1659c51862.json')
+        .then(function (resp) {
+            return resp.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            c = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+            ctx.beginPath();
+            drawcircle(data.worktime, p1, c);
+            drawcircle(data.workingstyle, p2, c);
+            drawcircle(data.case, p3, c);
+            drawcircle(data.sproblems, p4, c);
+            drawcircle(data.processor, p5, c);
+            drawcircle(data.schedule, p6, c);
+            drawcircle(data.interact, p7, c);
+            drawcircle(data.hours, p8, c);
+            drawcircle(data.often, p9, c);
+            drawcircle(data.focus, p10, c);
+            drawcircle(data.ingroup, p11, c);
+
+            drawbottom(data.fname, data.lname, c, 1400);
+        });
+    //zaher
+    fetch('https://bacit.info/hwr/20221031213350-d0ba26f39501bc31aa2b46ce81f841f5.json')
+        .then(function (resp) {
+            return resp.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            c = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+            ctx.beginPath();
+            drawcircle(data.worktime, p1, c);
+            drawcircle(data.workingstyle, p2, c);
+            drawcircle(data.case, p3, c);
+            drawcircle(data.sproblems, p4, c);
+            drawcircle(data.processor, p5, c);
+            drawcircle(data.schedule, p6, c);
+            drawcircle(data.interact, p7, c);
+            drawcircle(data.hours, p8, c);
+            drawcircle(data.often, p9, c);
+            drawcircle(data.focus, p10, c);
+            drawcircle(data.ingroup, p11, c);
+
+            drawbottom(data.fname, data.lname, c, 1450);
+        });
 </script>
 </body>
 </html>
