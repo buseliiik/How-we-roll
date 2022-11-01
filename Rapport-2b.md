@@ -40,6 +40,12 @@ Dette er den prioriterte rekkefølgen på våre brukerhistorier. Vi valgte denne
 <!-- FS-SYSTEM -->
 ## FS-SYSTEM 
 
+Html attributene fikk navn i forhold til funksjonen til elementene. Disse navnene ble valgt slik at andre som ser på koden kan forstå hva elementen inneholder. Siden disse elementene har fått navn som klasser, fikk vi muligheten til å kalle disse fra css filen og samtidig script elementet som inneholder funksjonelle javascript kode. 
+I css kalte vi “slider”,  “slidercontainer”, “button” og samtidig andre globale elementene (sånn som body) for å gi stil til FS-SYSTEM. I script kalte vi “form” og “submit” elementene for å kunne hente dataene fra html. “Form” elementen inneholder dataen og “submit” elementen kobler knappen til script funksjonen. 
+På denne måten har vi gjort prosessen fra html input til json output.
+
+Når det gjelder datamodellen, har vi valgt å bruke to string elementer som er navn og etternavn, tolv nummer elementer som kommer fra html range elementene, og samtidig transaksjons-id og tid-stempel. Disse lagres i en JSON object literal.
+
 
 ### FS-SYSTEM-STEG
 
