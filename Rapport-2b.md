@@ -15,6 +15,7 @@ Denne markdown filen vil inneholde en beskrivelse av fremgangsmåten vår, FS-AN
       </ul>
     </li>
     <li><a href="#fs-tester">FS-TESTER</a></li>
+    <li><a href="#kilder">Kilder</a></li>
   </ol>
 </details>
 
@@ -103,3 +104,9 @@ Datamodellen
 FS-TESTER - dokumenter de valgte stegene, testene som blir gjort. Ta tester for hver av stegene. Beskriv at funksjonene tilfredstiller testene
 __Tester:__
 1. Slider: Vi bestemte oss for å teste slider funksjonen før vi begynte med WEB-FORMEN. Vi måtte første researche hvordan man lager en slider (se koden i filen slidertest.html). Deretter plotte inn en verdi og teste hvordan det kan "tegnes" med Canvas API.
+
+
+
+<!-- Kilder -->
+## Kilder
+
