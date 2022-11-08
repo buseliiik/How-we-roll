@@ -17,8 +17,14 @@
         <li><a href="download-readme.html">Rapport</a></li>
     </ul>
 
+ <div class="checkboxclass" >
+     <label for="cb">Color Blind:</label>
+     <input type="checkbox" name="Colorblind:" id="cb" onclick="draweverything()">
+
+
+ </div>
+
 <div = "cd" style="text-align:center;">
-    <p>Colorblind:</p><input type="checkbox" id="cb" onclick="draweverything()"></br>
 	<canvas id="c" width="950" height="1500" style="border:1px solid #000000;">
 	canvas støttes ikke av nettleseren din
 	</canvas>
@@ -114,7 +120,7 @@
         drawbar("Work on it together", "Go off alone and think", "How do you prefer to work?", p2, ctx);
         drawbar("Tell me the back story", "Cut to the chase", "Do you prefer to tell background stories or get cut to the chase?", p3, ctx);
         drawbar("Need to talk about it", "Need to move on", "How do you solve your problems?", p4, ctx);
-        drawbar("Verbal processor", "Metntal processor", "How do you process your work?", p5, ctx);
+        drawbar("Verbal processor", "Mental processor", "How do you process your work?", p5, ctx);
         drawbar("Schedule time to chat", "Interrupt me when you need me", "How do you plan your meetings?", p6, ctx);
         drawbar("Video chat", "Texts in discord", "How do you want to interact with the group?", p7, ctx);
         drawbar("9-17 hours", "I have no schedule", "How is your work schedule?", p8, ctx);
