@@ -27,7 +27,10 @@ __How we roll brukerhistorie med eksempel:__
 
 Som bruker på websiden eller rapporten vi vil lære dyb kunnskap om medarbeiderne. Så kan vi jobbe sammen med en lærerikt og effektiv måte. Målet er å få godt gruppearbeid gjennom semesteret. 
 Akseptansekriterier : Vi må ha minst 10 range sliders i rapporten som gir informasjon om alle i gruppen. Deretter må de samles og det blir lettere å se gjennomsnittsverdier.
-F.eks Mie er gruppe lederen av gruppe 2B og hun ville ha en ekstra møte med medlemmer for å planlegge 114 oppgaven. Hun sjekker how we roll rapporten og ser at mest av medlemmene foretrekker å ha møte på morgen og på discord. Da kan Mie invitere folken til gruppesmøte søndag morgen via discord. 
+F.eks Mie er gruppe lederen av gruppe 2B og hun ville ha en ekstra møte med medlemmer for å planlegge 114 oppgaven. Hun sjekker how we roll rapporten og ser at mest av medlemmene foretrekker å ha møte på morgen og på discord. Da kan Mie invitere folken til gruppesmøte søndag morgen via discord.
+
+How We Roll vil hjelpe oss med å skaffe mye informasjon om medlemmene våre. Alle spørreundersøkelser vil bli lagt til kunnskapen vi tidligere har fått om våre medlemmer gjennom en samarbeidsprosess. Dette vil hjelpe oss i å lære mer om vaner til medlemmer og lære hvordan vi kan fikse uvaner. Som et resultat vil vi kunne overkomme utfordringer som gjør at vi misforstår, mangler kommunikasjon og ikke klarer å fullføre oppgavene i tide.
+
 
 __Ekstra brukerhistorier:__
 1. Som sagt ovenfor er How We Woll hoved brukerhistorien vår. Den har en egen side både for sliderne/innhenting av informasjon, denne heter "How We Roll". Vi har også en egen side for resultatene og rapporten som heter "Resultater" - begge finnes i navigation baren og utgjør vår besvarelse på How We Roll brukerhistorien. 
@@ -50,6 +53,7 @@ Når det gjelder datamodellen, har vi valgt å bruke to string elementer som er 
 ### FS-SYSTEM-STEG
 
 __Skisser:__
+Som står i GR-KUNN-FERD har vi lært allerede å bruke systemer f.eks. html, css, kanban og github. Først laget vi website template. Og deretter laget vi 12 forslag til data kategorier i websiden fanen, operert folkens egne egenskaper med WEB-FORM. Det betyr data fra brukerne er samlet for rapporten. Dataene som vi lagde er input.  Etter er alle ferdig med å legge inn data, vi laget en forståelig rapport viser at vaner av gruppe medarbeider. Så er dataene fra WEB-FORM behandlet som output i WEB-RAPPORT. 
 
 
 <img width="595" alt="Skjermbilde 2022-10-28 kl  16 36 14" src="https://user-images.githubusercontent.com/111752047/198653736-95fc4f2e-1d11-4c43-a5c8-0e550521e4e1.png">
@@ -58,10 +62,12 @@ __Skisser:__
 <img width="463" alt="Skjermbilde 2022-10-28 kl  16 45 25" src="https://user-images.githubusercontent.com/111752047/198655860-040e0414-53dd-49a3-bc1d-d4d9552fabc5.png">
 Forskjellige skisser som viser prosessen fra INPUT til OUTPUT.
 
+
+Når det gjelder datamodellen, har vi valgt å bruke to string elementer som er navn og etternavn, tolv nummer elementer som kommer fra html range elementene, og samtidig transaksjons-id og tid-stempel. Disse lagres i en JSON object literal.
 <img width="612" alt="Skjermbilde 2022-10-28 kl  16 43 36" src="https://user-images.githubusercontent.com/111752047/198654482-2b6d75a9-1786-43ea-abbd-e0b816ca80be.png">
 
 
-Skissen fra FS-SYSTEM er en abstrakt skisse til hvordan systemet vårt skal fungere. Med systemet prater vi om å omgjøre brukerens input til brukbar output. Istedenfor at vi går rett på kodingen, blir det mer oversiktlig hvis vi bryter oppgaven ned til mer abstrakte modeller.
+Skissene fra FS-SYSTEM er en abstrakt skisse til hvordan systemet vårt skal fungere. Med systemet prater vi om å omgjøre brukerens input til brukbar output. Istedenfor at vi går rett på kodingen, blir det mer oversiktlig hvis vi bryter oppgaven ned til mer abstrakte modeller.
 Hvordan input dataen skal sendes inn og hvordan output dataen blir hentet vil bli slik:
 
 * Input
