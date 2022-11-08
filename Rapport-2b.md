@@ -53,6 +53,7 @@ Når det gjelder datamodellen, har vi valgt å bruke to string elementer som er 
 ### FS-SYSTEM-STEG
 
 __Skisser:__
+
 Som står i GR-KUNN-FERD har vi lært allerede å bruke systemer f.eks. html, css, kanban og github. Først laget vi website template. Og deretter laget vi 12 forslag til data kategorier i websiden fanen, operert folkens egne egenskaper med WEB-FORM. Det betyr data fra brukerne er samlet for rapporten. Dataene som vi lagde er input.  Etter er alle ferdig med å legge inn data, vi laget en forståelig rapport viser at vaner av gruppe medarbeider. Så er dataene fra WEB-FORM behandlet som output i WEB-RAPPORT. 
 
 
