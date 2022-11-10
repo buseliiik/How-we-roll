@@ -35,6 +35,9 @@ https://codingartistweb.com/2021/07/custom-range-slider-html-css-javascript/
 Jan Terje Karlsen. (2021). Prosjektledelse (femte utgave). universitetsforlaget.
 <br>
 
+Laurence Lars Svekis, Rob Percival, & Maaike van Putten. (2021). JavaScript from Beginner to Professional. Packt Publishing.
+<br>
+
 Mozilla, u.å, center: The Centered Text element, ukjent, source code:<br>
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center
 <br>
