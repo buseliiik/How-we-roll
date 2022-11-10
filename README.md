@@ -7,7 +7,6 @@
     <li>
       <a href="#om-prosjektet">Om prosjektet</a>
     <li>
-      <a href="#rapporten-vår">Rapporten vår</a>
       <li><a href="#nettsiden-vår">Nettsiden vår</a></li>
     <li><a href="#kilder">Kilder</a></li>
   </ol>
