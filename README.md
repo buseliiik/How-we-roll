@@ -4,10 +4,8 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#om-prosjektet">Om prosjektet</a>
-    <li>
-      <li><a href="#nettsiden-vår">Nettsiden vår</a></li>
+    <li><a href="#om-prosjektet">Om prosjektet</a></li>
+    <li><a href="#nettsiden-vår">Nettsiden vår</a></li>
     <li><a href="#kilder">Kilder</a></li>
   </ol>
 </details>
@@ -57,7 +55,7 @@ W3schools, u.å, Json objects literal, ukjent, source code:<br>
 https://www.w3schools.com/js/js_json_objects.asp 
 <br>
 
-Gruppe repo eksempler
-https://github.com/theodorUIA/howweroll 
+Gruppe repo eksempler <br>
+https://github.com/theodorUIA/howweroll <br>
 https://github.com/stinawest/how-we-roll
 
