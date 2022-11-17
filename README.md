@@ -4,11 +4,23 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#våre-gruppemedlemmer">Våre gruppemedlemmer</a></li>
     <li><a href="#om-prosjektet">Om prosjektet</a></li>
     <li><a href="#nettsiden-vår">Nettsiden vår</a></li>
     <li><a href="#kilder">Kilder</a></li>
   </ol>
 </details>
+
+
+<!-- Våre gruppemedlemmer -->
+## Våre gruppemedlemmer
+| Navn  | Repository link |
+| ------------- | ------------- |
+| Mie Maxine Mjølstad Nord  | https://github.com/mienord  |
+| Busenur Yilmaz  | https://github.com/buseliiik  |
+|  Jeppe Stenstadvolden Strømberg  | https://github.com/Jeppess123  |
+| Martin O Hovland  | https://github.com/MartinOHovland  |
+| Stein Arild V.Danielsen  | https://github.com/SteinArildN |
 
 
 <!-- Om prosjektet -->
@@ -59,6 +71,5 @@ https://www.w3schools.com/js/js_json_objects.asp
 <br>
 
 Gruppe repo eksempler <br>
-https://github.com/theodorUIA/howweroll <br>
 https://github.com/stinawest/how-we-roll
 
