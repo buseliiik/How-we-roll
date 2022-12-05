@@ -67,7 +67,7 @@ li a:hover {
 
 /* Some left and right padding inside the container */
 .container {
-  padding: 0 16px;
+    padding: 0 16px;
 }
 
 /* Clear floats */
