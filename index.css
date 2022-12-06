@@ -52,6 +52,31 @@ li a:hover {
 
 }
 
+.column1{
+  float: left;
+  width: 23%;
+  margin-left:100px;
+  margin-bottom:10px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  margin-right:10px;
+  margin-top:50px;
+
+}
+.column2{
+float: left;
+width: 23%;
+background-color: #FFFFFF;
+ margin-left: 250px;
+ margin-top: 100px;
+
+}
+
+.title2{
+text-align: center;
+color: grey;
+}
+
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 600px) {
   .column {
