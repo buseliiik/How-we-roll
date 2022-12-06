@@ -44,11 +44,11 @@ li a:hover {
 .column {
   float: left;
   width: 20%;
-  margin-left:120px;
+  margin-left:140px;
   margin-bottom:10px;
-  padding: 10px;
   background-color: #FFFFFF;
   margin-right:10px;
+  margin-top:20px;
 
 }
 
@@ -57,7 +57,6 @@ li a:hover {
   width: 23%;
   margin-left:100px;
   margin-bottom:10px;
-  padding: 5px;
   background-color: #FFFFFF;
   margin-right:10px;
   margin-top:50px;
@@ -72,6 +71,18 @@ background-color: #FFFFFF;
 
 }
 
+.column3{
+float: left;
+width: 20%;
+background-color: #FFFFFF;
+ margin-left: 300px;
+ margin-top: 60px;
+ margin-right:-50px;
+
+}
+
+
+/* title i visitkort siden */
 .title2{
 text-align: center;
 color: grey;
@@ -165,11 +176,7 @@ body {background: linear-gradient(90deg, rgb(254, 241, 245) 0%, rgb(228, 239, 25
   cursor: pointer;
 }
 
-
-
-
-
-/*text align*/
+/*text align i slider*/
   .right {
         text-align: right;
       }
@@ -180,14 +187,7 @@ body {background: linear-gradient(90deg, rgb(254, 241, 245) 0%, rgb(228, 239, 25
 
 
 
-
-
-
-
-
-
-
-      /*TIMELINE DESIGN*/
+      /*TIMELINE DESIGN i prosses siden*/
       .Yearly-timeline{ font-family: 'Poppins', sans-serif; }
               .Yearly-timeline:after{
                   content: '';
@@ -437,7 +437,6 @@ body {background: linear-gradient(90deg, rgb(254, 241, 245) 0%, rgb(228, 239, 25
                      -webkit-filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .3));
                      filter: drop-shadow( 0px 0px 3px rgba(0, 0, 0, .3));
                  }
-
                        
     .checkboxclass {
       text-align: center;
