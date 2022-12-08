@@ -6,6 +6,8 @@
 <!-- tab name-->
 <title>How we roll</title>
 
+<!--kilde- https://github.com/stinawest/how-we-roll-->
+
 
 <!-- Navigation bar-->
 <body>
@@ -19,6 +21,8 @@
 </ul>
 
 
+
+
 <!--UNDERSØKELSE-->
 <div class="header"><span class="header-text"></span></div>
 <div class="topnav">
@@ -26,264 +30,283 @@
 <div class="main-content">
     <form>
 
-        <!--FORM-->
-        <br><br><br><br>
-        <h2>Your information and your preferences to give your group insight into you and your habits</h2>
-        <br><br><br>
+<!--FORM-->
+<br><br><br><br>
+  <h2>Your information and your preferences to give your group insight into you and your habits</h2>
+<br><br><br>
 
-        <div class="form-div">
-            <table class="form-table">
-                <tr>
-                    <td class="text-align-right">
-                        <label for="fname">Name:</label>
-                    </td>
-                    <td class="text-align-left"><input type="text" name="fname" id="fname" class='form-textinput' >
-                    <td class="text-align-right">
-                        <label for="lname">Surname:</label>
-                    </td>
-                    <td class="text-align-left"><input type="text" name="lname" id="lname" class='form-textinput' ></td>
-                </tr>
-            </table>
+<div class="form-div">
 
+ <table class="form-table">
+  <tr>
+   <td class="text-align-right">
+    <label for="fname">Name:</label>
+   </td>
 
-            <!--RANGE SLIDERS-->
+   <td class="text-align-left"><input type="text" name="fname" id="fname" class='form-textinput'>
+    <td class="text-align-right">
+    <label for="lname">Surname:</label>
+   </td>
 
-            <br><br><br><br>
-
-            <h4><label for="worktime" >1. When do you work best?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"> <input type="range" name="worktime" id="worktime" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Earlybird</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Night owl</td>
-                </tr>
-            </table>
-
-            <br>
-            <br>
+   <td class="text-align-left"><input type="text" name="lname" id="lname" class='form-textinput'></td>
+   </tr>
+ </table>
 
 
-            <h4><label for="workingstyle" >2. How do you prefer to work? </label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="workingstyle" id="workingstyle" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Work on it together</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Go off alone and think</td>
-                </tr>
-            </table>
+ <!--RANGE SLIDERS-->
+ <br><br><br><br>
+ <h4><label for="worktime">1. When do you work best?</label></h4>
+  <table class="slidercontainer">
+   <tr>
+    <td colspan="3"><input type="range" name="worktime" id="worktime" min="0" max="100" value="50"
+     class="slider">
+    </td>
+   </tr>
 
-            <br>
-            <br>
+   <tr>
+    <td class="text-align-left"> Earlybird</td>
+    <td class="text-align-center">indifferent</td>
+    <td class="text-align-right">Night owl</td>
+   </tr>
+  </table>
 
-            <!--case er forkortelsen for spørsmålet "Do you prefer to tell background stories or get cut to the chase"-->
-            <h4><label for="case" >3. Do you prefer to tell background stories or get cut to the chase?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="case" id="case" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Tell me the back story</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Cut to the chase</td>
-                </tr>
-            </table>
+<br>
+<br>
 
-            <br>
-            <br>
+<h4><label for="workingstyle">2. How do you prefer to work? </label></h4>
+   <table class="slidercontainer">
+    <tr>
+        <td colspan="3"><input type="range" name="workingstyle" id="workingstyle" min="0" max="100"
+    value="50" class="slider">
+        </td>
+    </tr>
 
-            <!--sproblems er forkortelse for "how do ypu process your work"-->
-            <h4><label for="sproblems" >4. How do you solve your problems? </label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="sproblems" id="sproblems" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Need to talk about it</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Need to move on</td>
-                </tr>
-            </table>
+    <tr>
+     <td class="text-align-left"> Work on it together</td>
+     <td class="text-align-center">indifferent</td>
+     <td class="text-align-right">Go off alone and think</td>
+    </tr>
+   </table>
 
-            <br>
-            <br>
+   <br>
+   <br>
 
-            <!--processor er forkortelse for "how do ypu process your work"-->
-            <h4><label for="processor" > 5. How do you process your work?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="processor" id="processor" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Verbal processor</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Mental processor</td>
-                </tr>
-            </table>
+<!--case er forkortelsen for spørsmålet "Do you prefer to tell background stories or get cut to the chase"-->
+<h4><label for="case">3. Do you prefer to tell background stories or get cut to the chase?</label></h4>
+   <table class="slidercontainer">
+    <tr>
+     <td colspan="3"><input type="range" name="case" id="case" min="0" max="100" value="50"
+    class="slider">
+     </td>
+    </tr>
+    <tr>
+      <td class="text-align-left"> Tell me the back story</td>
+      <td class="text-align-center">indifferent</td>
+      <td class="text-align-right">Cut to the chase</td>
+    </tr>
+   </table>
 
-            <br>
-            <br>
-            <!--schedule er forkortelse for "how do you plan your meetings"-->
-            <h4><label for="schedule" >6. How do you plan your meetings?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="schedule" id="schedule" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Schedule a time to chat</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Interrupt me when you need me </td>
-                </tr>
-            </table>
+   <br>
+   <br>
 
-            <br>
-            <br>
-            <!--interact er forkortelse for "how do ypu interact with the group"-->
-            <h4><label for="interact" >7. How do you want to interact with the group?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="interact" id="interact" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Video chat</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">texts in discord </td>
-                </tr>
-            </table>
+<!--sproblems er forkortelse for "how do ypu process your work"-->
+<h4><label for="sproblems">4. How do you solve your problems? </label></h4>
+    <table class="slidercontainer">
+     <tr>
+      <td colspan="3"><input type="range" name="sproblems" id="sproblems" min="0" max="100" value="50"
+      class="slider"></td>
+     </tr>
+      <tr>
+       <td class="text-align-left"> Need to talk about it</td>
+       <td class="text-align-center">indifferent</td>
+       <td class="text-align-right">Need to move on</td>
+      </tr>
+     </table>
 
+    <br>
+    <br>
 
-            <br>
-            <br>
+<!--processor er forkortelse for "how do ypu process your work"-->
+<h4><label for="processor"> 5. How do you process your work?</label></h4>
+     <table class="slidercontainer">
+      <tr>
+       <td colspan="3"><input type="range" name="processor" id="processor" min="0" max="100" value="50"
+        class="slider"></td>
+      </tr>
+      <tr>
+        <td class="text-align-left"> Verbal processor</td>
+        <td class="text-align-center">indifferent</td>
+        <td class="text-align-right">Mental processor</td>
+      </tr>
+     </table>
 
-            <!--hours er forkortelse for spørsmålet "how is your work schedule"-->
-            <h4><label for="hours" >8. How is your work schedule?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> 9-17 Hours</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">I have no schedule</td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <!--often er forkortelse for spørsmålet "how often do you work"-->
-            <h4><label for="often" >9. How often do you work?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="often" id="often" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Finish homework quickly</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Do the homework little by little every day</td>
-                </tr>
-            </table>
+    <br>
+    <br>
 
-            <br>
-            <br>
+<!--schedule er forkortelse for "how do you plan your meetings"-->
+<h4><label for="schedule">6. How do you plan your meetings?</label></h4>
+     <table class="slidercontainer">
+       <tr>
+       <td colspan="3"><input type="range" name="schedule" id="schedule" min="0" max="100" value="50"
+        class="slider"></td>
+       </tr>
+       <tr>
+        <td class="text-align-left"> Schedule a time to chat</td>
+        <td class="text-align-center">indifferent</td>
+        <td class="text-align-right">Interrupt me when you need me</td>
+       </tr>
+     </table>
 
-            <!--focus er forkortelse for spørsmålet "how do you focus"-->
-            <h4><label for="focus" >10. How do you focus?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="focus" id="focus" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> Need silence to focus</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Not having problem to focus</td>
-                </tr>
-            </table>
+    <br>
+    <br>
 
-            <br>
-            <br>
-
-            <!--ingroup er forkortelse for spørsmålet "how do you work in a group"-->
-            <h4><label for="ingroup" >11. How do you work in a group?</label></h4>
-            <table class="slidercontainer">
-                <tr>
-                    <td colspan="3"><input type="range" name="ingroup" id="ingroup" min="0" max="100" value="50" class="slider" ></td>
-                </tr>
-                <tr>
-                    <td class="text-align-left"> I want to be part of the process</td>
-                    <td class="text-align-center">indifferent</td>
-                    <td class="text-align-right">Just tell me what to do</td>
-                </tr>
-            </table>
-
-            <br>
-            <br>
-            <br>
-            <br>
+    <!--interact er forkortelse for "how do ypu interact with the group"-->
+<h4><label for="interact">7. How do you want to interact with the group?</label></h4>
+     <table class="slidercontainer">
+       <tr>
+        <td colspan="3"><input type="range" name="interact" id="interact" min="0" max="100" value="50"
+         class="slider"></td>
+       </tr>
+       <tr>
+        <td class="text-align-left"> Video chat</td>
+        <td class="text-align-center">indifferent</td>
+        <td class="text-align-right">texts in discord</td>
+       </tr>
+     </table>
 
 
+    <br>
+    <br>
 
-    <!--submit button -->
-            <div class="btncontainer">
-                <button class="btn submit" type="submit">Submit</button>
-            </div>
-        </div>
-    </form>
+<!--hours er forkortelse for spørsmålet "how is your work schedule"-->
+<h4><label for="hours">8. How is your work schedule?</label></h4>
+    <table class="slidercontainer">
+     <tr>
+      <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50"
+       class="slider"></td>
+     </tr>
+     <tr>
+      <td class="text-align-left"> 9-17 Hours</td>
+      <td class="text-align-center">indifferent</td>
+      <td class="text-align-right">I have no schedule</td>
+     </tr>
+    </table>
 
-    <!--Resultat på undersøkelse-->
+   <br>
+   <br>
+
+<!--often er forkortelse for spørsmålet "how often do you work"-->
+<h4><label for="often">9. How often do you work?</label></h4>
+    <table class="slidercontainer">
+     <tr>
+      <td colspan="3"><input type="range" name="often" id="often" min="0" max="100" value="50"
+       class="slider"></td>
+     </tr>
+     <tr>
+      <td class="text-align-left"> Finish homework quickly</td>
+      <td class="text-align-center">indifferent</td>
+      <td class="text-align-right">Do the homework little by little every day</td>
+     </tr>
+    </table>
+
+    <br>
+    <br>
+
+<!--focus er forkortelse for spørsmålet "how do you focus"-->
+<h4><label for="focus">10. How do you focus?</label></h4>
+     <table class="slidercontainer">
+      <tr>
+       <td colspan="3"><input type="range" name="focus" id="focus" min="0" max="100" value="50"
+        class="slider"></td>
+      </tr>
+      <tr>
+       <td class="text-align-left"> Need silence to focus</td>
+       <td class="text-align-center">indifferent</td>
+       <td class="text-align-right">Not having problem to focus</td>
+      </tr>
+     </table>
+
+     <br>
+     <br>
+
+<!--ingroup er forkortelse for spørsmålet "how do you work in a group"-->
+<h4><label for="ingroup">11. How do you work in a group?</label></h4>
+      <table class="slidercontainer">
+      <tr>
+       <td colspan="3"><input type="range" name="ingroup" id="ingroup" min="0" max="100" value="50"
+        class="slider"></td>
+      </tr>
+      <tr>
+       <td class="text-align-left"> I want to be part of the process</td>
+       <td class="text-align-center">indifferent</td>
+       <td class="text-align-right">Just tell me what to do</td>
+      </tr>
+      </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<!--submit button -->
+    <div class="btncontainer">
+      <button class="btn submit" type="submit">Submit</button>
+    </div>
+   </div>
+</form>
+
+<!--Resultat på undersøkelse-->
     <br><br>
     <div class='results' style="margin-left:630px;">
-       Results:<br>
-        <pre></pre>
+        Results:<br>
+        <pre>
+        </pre>
     </div>
 </div>
 
 
 <!--Javascript for dokumentet-->
-<script>
 
-            // source: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (2022-11-1)
+        <script>
+// source: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (2022-11-1)
+//the asynchronous function that posts the data from handleSubmit function
+    async function postData(url ='https://bacit.info/', data = {}) {
 
-          //the asynchronous function that posts the data from handleSubmit function
-            async function postData(url ='https://bacit.info/', data = {}) {
-
-                // waiting for the handleSubmit function to be called
-                const response = await fetch(url, {
-                    method: 'POST', // Used post because we are posting data
-                    mode: 'cors', // using the default value
-                    cache: 'no-cache', //we don't need cache
-                    credentials: 'same-origin', // using default value
-                    headers: {
-                        'Content-Type': 'application/json',
-                        // the data is sent as a json object literal,
+// waiting for the handleSubmit function to be called
+    const response = await fetch(url, {
+    method: 'POST', // Used post because we are posting data
+    mode: 'cors', // using the default value
+    cache: 'no-cache', //we don't need cache
+    credentials: 'same-origin', // using default value
+    headers: {
+    'Content-Type': 'application/json', // the data is sent as a json object literal,
                     },
-                    redirect: 'follow', // default value
-                    referrerPolicy: 'no-referrer', // default value
-                    body: JSON.stringify(data) // body data type matching "Content-Type"
+    redirect: 'follow', // default value
+    referrerPolicy: 'no-referrer', // default value
+    body: JSON.stringify(data) // body data type matching "Content-Type"
                 });
-                return response.json(); // parsing JSON response to JavaScript objects
+    return response.json(); // parsing JSON response to JavaScript objects
             }
 
-            //the function that submits the data to postData function
-            function handleSubmit(event) {
-                event.preventDefault();
-                const data = new FormData(event.target); // setting the target as a form
-                const formJSON = Object.fromEntries(data.entries());// reaching the data
-                const results = document.querySelector('.results pre'); // in order to post the data to website as well
-                postData('https://bacit.info/', formJSON) // posting the json form to bacit info
-                    .then(data => {
-                        let trxid = JSON.stringify(data.trxid, null, 2).replace(/"/g, ""); //updating the url so that we can find the data
-                        let time = JSON.stringify(data.time, null, 2).replace(/"/g, ""); //updating the url so that we can find the data
-                        results.innerText = JSON.stringify(data, null, 2);
-                        document.getElementById("HWR-form").reset(); //resetting the form after posting it
-                        return false;
+//the function that submits the data to postData function
+    function handleSubmit(event) {
+    event.preventDefault();
+    const data = new FormData(event.target); // setting the target as a form
+    const formJSON = Object.fromEntries(data.entries());// reaching the data
+    const results = document.querySelector('.results pre'); // in order to post the data to website as well
+    postData('https://bacit.info/', formJSON) // posting the json form to bacit info
+    .then(data => {
+    let trxid = JSON.stringify(data.trxid, null, 2).replace(/"/g, ""); //updating the url so that we can find the data
+    let time = JSON.stringify(data.time, null, 2).replace(/"/g, ""); //updating the url so that we can find the data
+    results.innerText = JSON.stringify(data, null, 2);
+    document.getElementById("HWR-form").reset(); //resetting the form after posting it
+    return false;
                     });
             }
-            const form = document.querySelector('form'); //selecting the form
-            form.addEventListener('submit', handleSubmit); // adding the handleSubmit function as a submit event
+    const form = document.querySelector('form'); //selecting the form
+    form.addEventListener('submit', handleSubmit); // adding the handleSubmit function as a submit event
+
         </script>
-</body>
+    </body>
 </html>
