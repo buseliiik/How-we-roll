@@ -21,25 +21,24 @@
  <div class="checkboxclass" >
      <label for="cb">Color Blind:</label>
      <input type="checkbox" name="Colorblind:" id="cb" onclick="draweverything()">
-
-
  </div>
 
-<div style="text-align:center;">
+ <div style="text-align:center;">
 	<canvas id="c" width="950" height="1500" style="border:1px solid #000000;">
 	/*canvas støttes ikke av nettleseren din*/
 	</canvas>
-</div>
+ </div>
 
-<script>
+
+    <script>
 /*https://www.w3schools.com/html/html5_canvas.asp*/
     var canvas = document.getElementById("c"); /*definere canvas elementet i javascript koden vår*/
     var ctx = canvas.getContext("2d"); /*canvas context*/
 
 /*https://www.w3schools.com/js/js_classes.asp*/
-    /*klasser, disse vil skape renere kode*/
+/*klasser, disse vil skape renere kode*/
 
-    //posisjoner til barene
+//posisjoner til barene
     const sx = 95;
     const p1 = [sx, 100], p2 = [sx, 200], p3 = [sx, 300], p4 = [sx, 400], p5 = [sx, 500], p6 = [sx, 600], p7 = [sx, 700], p8 = [sx, 800], p9 = [sx, 900], p10 = [sx, 1000], p11 = [sx, 1100];
     //Etter x1200 can vi tegne ned navnene og deres korrisponderende farge
@@ -54,9 +53,9 @@
         draweverything();
     } 
 
-    //egentlig skulle 'barsene' være klasser, men det ble funksjoner istedet
-    //fordi jeg kunne ikke redigere klassene inni 'fetch data' funksjonen
-    function drawbar(t1, t2, t, p, ctx) {
+//egentlig skulle 'barsene' være klasser, men det ble funksjoner istedet
+//fordi jeg kunne ikke redigere klassene inni 'fetch data' funksjonen
+   function drawbar(t1, t2, t, p, ctx) {
         ctx.beginPath();
         ctx.font = "15px Arial";
         ctx.textAlign = 'center';
@@ -71,7 +70,8 @@
         ctx.fillStyle = "000000";
         ctx.stroke();
     }
-    //Her er funksjon til å tegne sirkel
+
+//Her er funksjon til å tegne sirkel
     function drawcircle(v, p, c, n) {
         ctx.beginPath();
         ctx.moveTo(p[0], p[1]);
@@ -130,8 +130,8 @@
         drawbar("I want to be part of the process", "Just tell me what to do", "How do you work in a group", p11, ctx);
 
         ctx.textAlign = 'left';
-        //hente inn json infoen og på samme tid tegne dem...
-        //buse
+//hente inn json infoen og på samme tid tegne dem...
+   //buse
         fetch('https://bacit.info/hwr/20221031172712-750b13f74c161fd10b7b46cea245269b.json')
             .then(function (resp) {
                 return resp.json();
@@ -156,10 +156,10 @@
                 drawcircle(data.focus, p10, c, n);
                 drawcircle(data.ingroup, p11, c, n);
 
-                //Bunden...
+            //Bunden...
                 drawbottom(data.fname, data.lname, c, 1200, n);
             });
-        //jeppe
+   //jeppe
         fetch('https://bacit.info/hwr/20221031155101-1746d8459fdd74f6a6d619d213c6e17a.json')
             .then(function (resp) {
                 return resp.json();
@@ -183,10 +183,10 @@
                 drawcircle(data.focus, p10, c, n);
                 drawcircle(data.ingroup, p11, c, n);
 
-                //Bunden...
+            //Bunden...
                 drawbottom(data.fname, data.lname, c, 1250, n);
             });
-        //martin
+   //martin
         fetch('https://bacit.info/hwr/20221031151731-7e94fa418d07c8bd6e2f562efd9a5e6e.json')
             .then(function (resp) {
                 return resp.json();
@@ -210,10 +210,10 @@
                 drawcircle(data.focus, p10, c, n);
                 drawcircle(data.ingroup, p11, c, n);
 
-                //Bunden...
+            //Bunden...
                 drawbottom(data.fname, data.lname, c, 1300, n);
             });
-        //mie
+   //mie
         fetch('https://bacit.info/hwr/20221031155038-f52541e89a612b43fef3d0b84253a79b.json')
             .then(function (resp) {
                 return resp.json();
@@ -237,10 +237,10 @@
                 drawcircle(data.focus, p10, c, n);
                 drawcircle(data.ingroup, p11, c, n);
 
-                //Bunden...
+            //Bunden...
                 drawbottom(data.fname, data.lname, c, 1350, n);
             });
-        //stein, den kuleste
+   //stein, den kuleste
         fetch('https://bacit.info/hwr/20221101125432-10dfe93cb4f5449749e57a1659c51862.json')
             .then(function (resp) {
                 return resp.json();
@@ -264,10 +264,10 @@
                 drawcircle(data.focus, p10, c, n);
                 drawcircle(data.ingroup, p11, c, n);
 
-                //Bunden...
+            //Bunden...
                 drawbottom(data.fname, data.lname, c, 1400, n);
             });
-        //zaher
+   //zaher
         fetch('https://bacit.info/hwr/20221031213350-d0ba26f39501bc31aa2b46ce81f841f5.json')
             .then(function (resp) {
                 return resp.json();
@@ -291,7 +291,7 @@
                 drawcircle(data.focus, p10, c, n);
                 drawcircle(data.ingroup, p11, c, n);
 
-                //Bunden...
+            //Bunden...
                 drawbottom(data.fname, data.lname, c, 1450, n);
             });
     }
